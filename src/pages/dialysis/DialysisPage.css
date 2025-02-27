@@ -1,0 +1,26 @@
+.add-dialysis-unit-button {
+  background-color: #1b5a90; /* A primary blue color */
+  color: white; /* White text */
+  font-size: 16px; /* Slightly larger text */
+  padding: 10px 20px; /* Adds some space inside the button */
+  border: none; /* Removes the default border */
+  border-radius: 5px; /* Rounds the corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.add-dialysis-unit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.add-dialysis-unit-button:active {
+  background-color: #004085; /* Even darker blue when clicked */
+  transform: scale(0.98); /* Slightly shrinks button on click */
+}
+
+.add-dialysis-unit-button:focus {
+  outline: none; /* Removes the default focus outline */
+  box-shadow: 0 0 5px #0056b3; /* Adds a glow effect on focus */
+}

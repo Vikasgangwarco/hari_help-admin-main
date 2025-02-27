@@ -1,0 +1,56 @@
+/* CentreForm.css */
+.centre-form-container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1, h2 {
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+  
+  input, select, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .form-actions {
+    /* display: flex; */
+    justify-content: space-between;
+  }
+  
+  .services-checkboxes label, .days-checkboxes label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  

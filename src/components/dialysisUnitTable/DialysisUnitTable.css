@@ -1,0 +1,73 @@
+.dialysis-units-table {
+    width: 97%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensures rounded corners are visible */
+    margin-left: 10px;
+  }
+  
+  .dialysis-units-table th,
+  .dialysis-units-table td {
+    padding: 15px 20px;
+    text-align: left;
+    /* border: 1px solid #ddd; */
+    font-size: 15px;
+    color: #333; /* Default text color */
+  }
+  
+  .dialysis-units-table th {
+    background-color: #1b5a90; /* Blue header background */
+    color: white; 
+    font-weight: bold;
+    text-transform: uppercase; /* Makes header text all caps */
+    letter-spacing: 1px; /* Adds some spacing between letters */
+  }
+  
+  .dialysis-units-table tr:nth-child(even) {
+    /* background-color: #f9f9f9; */
+  }
+  
+  .dialysis-units-table tr:hover {
+    /* background-color: #f1f1f1;  */
+    transform: scale(1.02); /* Subtle scale effect on hover */
+    transition: transform 0.2s ease-in-out; /* Smooth transition for the scale effect */
+  }
+  
+  .dialysis-units-table td {
+    font-size: 14px; /* Slightly smaller text for data */
+  }
+  
+  .dialysis-units-table td:last-child {
+    text-align: center;
+    font-size: 16px;
+    color: #007bff; /* Adds color to action column */
+    cursor: pointer; /* Indicates clickable actions */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+  }
+  
+  .dialysis-units-table td:last-child:hover {
+    /* color: #0056b3;  */
+  }
+  
+  .no-data {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  .dialysis-units-table td,
+  .dialysis-units-table th {
+    transition: all 0.2s ease; /* Adds a smooth transition on hover/focus */
+  }
+  
+  .dialysis-units-table tr {
+    transition: all 0.2s ease; /* Makes row hover transition smooth */
+  }
+  
+ 
+  

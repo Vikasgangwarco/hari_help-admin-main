@@ -1,0 +1,103 @@
+/* General styles */
+.hospital-registration-form {
+  width: 80%; /* Increased width for the form */
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e8f0;
+}
+
+.hospital-registration-form h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #2d3b48;
+  margin-bottom: 40px;
+}
+
+/* Form Section */
+.hospital-registration-form__section {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.hospital-registration-form__section h2 {
+  font-size: 1.5em;
+  color: #4b6a9b;
+  margin-bottom: 15px;
+}
+
+.hospital-registration-form__section h3 {
+  font-size: 1.2em;
+  margin: 15px 0;
+  color: #7a8c9b;
+}
+
+.hospital-registration-form label {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #5d6a79;
+}
+
+.hospital-registration-form input[type="text"],
+.hospital-registration-form input[type="email"],
+.hospital-registration-form input[type="url"],
+.hospital-registration-form input[type="date"],
+.hospital-registration-form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 18px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.hospital-registration-form .hospital-registration-form__checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.hospital-registration-form .hospital-registration-form__checkbox label {
+  margin-bottom: 10px;
+}
+
+/* Button styles */
+.hospital-registration-form__buttons {
+  /* text-align: center; */
+  margin-top: 20px;
+}
+
+.hospital-registration-form__submit-btn,
+.hospital-registration-form__cancel-btn {
+  padding: 12px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  margin: 0 8px; /* Added margin for gap between buttons */
+}
+
+.hospital-registration-form__submit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.hospital-registration-form__submit-btn:hover {
+  background-color: #45a049;
+}
+
+.hospital-registration-form__cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.hospital-registration-form__cancel-btn:hover {
+  background-color: #e53935;
+}

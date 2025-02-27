@@ -1,0 +1,109 @@
+/* Pathology Table Styling */
+.pathology-table {
+    width: 98%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .pathology-table th, .pathology-table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .pathology-table th {
+    background-color: #1b5a90;  /* Deep Blue header */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .pathology-table td {
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .pathology-table tr:nth-child(even) {
+    background-color: #f9f9f9;  /* Light alternating rows */
+  }
+  
+  .pathology-table tr:hover {
+    background-color: #f1f1f1;  /* Slight grey hover effect */
+  }
+  
+  .pathology-table .no-data {
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    font-style: italic;
+    padding: 15px 0;
+    background-color: #fafafa;
+  }
+  
+  .pathology-table td:last-child {
+    text-align: center;
+  }
+  
+  .pathology-table button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #1b5a90;  /* Deep Blue buttons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+  }
+  
+  .pathology-table button:hover {
+    background-color: #174d75;  /* Darker blue on hover */
+    transform: translateY(-2px);  /* Slight lift effect */
+  }
+  
+  .pathology-table button.delete {
+    background-color: #f44336;
+  }
+  
+  .pathology-table button.delete:hover {
+    background-color: #e53935;
+    transform: translateY(-2px);  /* Slight lift effect */
+  }
+  
+  .pathology-table button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(27, 90, 144, 0.5);  /* Blue glow for focus */
+  }
+  
+  .pathology-table td button {
+    margin: 0 5px;  /* Space buttons evenly */
+  }
+  
+  /* Optional: Adding a shadow effect to the table header */
+  .pathology-table th {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Shadow effect */
+  }
+  
+  /* Add responsive design to ensure good view on mobile devices */
+  @media screen and (max-width: 768px) {
+    .pathology-table {
+      font-size: 12px;  /* Smaller text on mobile */
+    }
+  
+    .pathology-table th, .pathology-table td {
+      padding: 10px;
+    }
+  
+    .pathology-table button {
+      font-size: 12px;
+    }
+  }
+  

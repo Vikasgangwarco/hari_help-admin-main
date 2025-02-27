@@ -1,0 +1,17 @@
+.add-clinic-button {
+  padding: 12px 20px;
+  background-color: #1b5a90;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px;
+  transition: background-color 0.3s ease;
+  margin-top: 50px;
+}
+
+.add-clinic-button:hover {
+  background-color: #2980b9;
+}

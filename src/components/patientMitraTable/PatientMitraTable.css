@@ -1,0 +1,97 @@
+/* Unique styles for the PatientMitraTable container */
+.patient-mitra-table-container {
+  margin-top: 20px;
+  overflow-x: auto; /* Allow horizontal scroll on smaller screens */
+  margin-left: 20px;
+}
+
+/* Unique styles for the table */
+.patient-mitra-table {
+  width: 97%;
+  border-collapse: collapse;
+  background-color: #fdfdfd; /* Light background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px; /* Rounded corners for the table */
+  margin-left: 10px;
+}
+
+/* Table headers styling */
+.patient-mitra-table th {
+  background-color: #1b5a90; /* Blue background */
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Rounded corners only for the first and last table headers */
+.patient-mitra-table th:first-child {
+  border-top-left-radius: 8px; /* Rounded left-top corner for the first header */
+}
+
+.patient-mitra-table th:last-child {
+  border-top-right-radius: 8px; /* Rounded right-top corner for the last header */
+}
+
+/* Table cells styling */
+.patient-mitra-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Row hover effect */
+.patient-mitra-table tr:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* No data message styling */
+.patient-mitra-table .no-data {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+  padding: 15px 0;
+}
+
+/* Action buttons styles in the last column */
+.patient-mitra-table .view-btn,
+.patient-mitra-table .edit-btn,
+.patient-mitra-table .delete-btn {
+  background-color: #3498db; /* Default blue color for buttons */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+/* Hover effects for the buttons */
+.patient-mitra-table .view-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.patient-mitra-table .edit-btn:hover {
+  background-color: #f39c12; /* Yellow for edit */
+}
+
+.patient-mitra-table .delete-btn:hover {
+  background-color: #e74c3c; /* Red for delete */
+}
+
+/* Active state for buttons (when clicked) */
+.patient-mitra-table .view-btn:active,
+.patient-mitra-table .edit-btn:active,
+.patient-mitra-table .delete-btn:active {
+  transform: translateY(2px); /* Button sinks slightly when clicked */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .patient-mitra-table th, .patient-mitra-table td {
+      font-size: 14px; /* Smaller text on mobile */
+      padding: 8px; /* Reduced padding */
+  }
+}

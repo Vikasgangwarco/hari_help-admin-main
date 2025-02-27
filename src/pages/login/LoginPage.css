@@ -1,0 +1,213 @@
+/* Basic Styles for the login page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7fc;  /* Light background color */
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.login-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;  /* Form will be a bit larger on bigger screens */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.login-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #555;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #555;
+  background-color: #f9f9f9;
+  box-sizing: border-box;  /* Ensure padding doesn't break the width */
+}
+
+.input-group input:focus {
+  border-color: #5c6bc0;  /* Focus border color */
+  outline: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #5c6bc0;  /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #3f51b5;
+}
+
+/* Responsive Styles for all screen sizes */
+
+/* For devices larger than 1200px (Desktop) */
+@media (min-width: 1200px) {
+  .login-container {
+    padding: 40px;  /* Provide extra padding on large screens */
+  }
+
+  .login-form {
+    padding: 50px;
+    max-width: 450px;  /* Form will not grow too large */
+  }
+
+  .login-form h2 {
+    font-size: 26px;
+  }
+
+  .input-group input {
+    font-size: 18px; /* Larger input text for desktop */
+  }
+
+  .login-btn {
+    font-size: 18px;
+  }
+}
+
+/* For medium-sized devices like tablets (768px - 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .login-container {
+    padding: 30px;  /* Slight padding for tablets */
+  }
+
+  .login-form {
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;  /* A little smaller form width for tablets */
+  }
+
+  .login-form h2 {
+    font-size: 24px;
+  }
+
+  .input-group input {
+    font-size: 16px;
+  }
+
+  .login-btn {
+    font-size: 16px;
+  }
+}
+
+/* For small to medium devices (Mobile & Tablet) */
+@media (max-width: 767px) {
+  .login-container {
+    padding: 20px;  /* Adjust padding for smaller devices */
+  }
+
+  .login-form {
+    padding: 30px;
+    width: 100%;
+    max-width: 100%;  /* Allow the form to take full width */
+  }
+
+  .login-form h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .input-group input {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .login-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+/* For very small screens (Mobile-first approach) */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px;  /* Reduce padding on smaller screens */
+  }
+
+  .login-form {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;  /* Full-width form on mobile */
+  }
+
+  .login-form h2 {
+    font-size: 20px;  /* Make the title smaller on mobile */
+  }
+
+  .input-group input {
+    padding: 10px;
+    font-size: 14px;  /* Smaller font size for inputs */
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Extra responsive for the smallest devices (portrait mode on small phones) */
+@media (max-width: 320px) {
+  .login-container {
+    padding: 5px;  /* Extra padding adjustment */
+  }
+
+  .login-form {
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .login-form h2 {
+    font-size: 18px;  /* Further reduce title size */
+  }
+
+  .input-group input {
+    padding: 8px;
+    font-size: 13px;  /* Very small input text for small screens */
+  }
+
+  .login-btn {
+    font-size: 13px;
+    padding: 8px;
+  }
+}

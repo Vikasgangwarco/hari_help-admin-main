@@ -1,0 +1,136 @@
+/* General form styles for DialysisUnitForm */
+.dialysisUnitForm {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+}
+
+.dialysisUnitForm .formTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+/* Section Titles */
+.dialysisUnitForm .sectionTitle {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* Input Group */
+.dialysisUnitForm .inputGroup {
+    margin-bottom: 15px;
+}
+
+.dialysisUnitForm .inputGroup label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.dialysisUnitForm .inputGroup input,
+.dialysisUnitForm .inputGroup select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.dialysisUnitForm .inputGroup input:focus,
+.dialysisUnitForm .inputGroup select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Checkbox Group */
+.dialysisUnitForm .checkboxGroup {
+    margin-bottom: 15px;
+}
+
+.dialysisUnitForm .checkboxGroup label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.dialysisUnitForm .checkboxGroup div {
+    margin-left: 20px;
+}
+
+.dialysisUnitForm .checkboxGroup input {
+    margin-right: 10px;
+}
+
+/* Buttons */
+.dialysisUnitForm .formActions {
+    /* display: flex; */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dialysisUnitForm .submitButton,
+.dialysisUnitForm .cancelButton {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.dialysisUnitForm .submitButton {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.dialysisUnitForm .cancelButton {
+    background-color: #f44336;
+    color: white;
+}
+
+.dialysisUnitForm .submitButton:hover {
+    background-color: #45a049;
+}
+
+.dialysisUnitForm .cancelButton:hover {
+    background-color: #e53935;
+}
+
+.dialysisUnitForm .submitButton:focus,
+.dialysisUnitForm .cancelButton:focus {
+    outline: none;
+}
+
+/* File Input Group */
+.dialysisUnitForm .fileGroup {
+    margin-bottom: 15px;
+}
+
+.dialysisUnitForm .fileGroup input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Optional: Adding styles for file labels to improve UI */
+.dialysisUnitForm .fileGroup label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #555;
+    display: block;
+}

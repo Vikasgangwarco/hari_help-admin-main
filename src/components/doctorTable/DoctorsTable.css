@@ -1,0 +1,133 @@
+/* Table Styling */
+.doctors-table {
+  width: 95%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.doctors-table th, .doctors-table td {
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.doctors-table th {
+  background-color: #1b5a90;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.doctors-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.doctors-table tr:hover {
+  background-color: #ffe4e1;
+  cursor: pointer;
+}
+
+.doctors-table tbody tr td {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* Action Button Container */
+.actions-button {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* Button Styles */
+.edit-btn, .delete-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  width: calc(50% - 6px);
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+  transform: scale(1.05);
+}
+
+.delete-btn:active {
+  transform: scale(0.98);
+}
+
+/* Button active states */
+.edit-btn:active, .delete-btn:active {
+  transform: scale(0.98);
+}
+
+.delete-btn:focus, .edit-btn:focus {
+  outline: none;
+}
+
+/* For Responsiveness */
+@media screen and (max-width: 768px) {
+  .doctors-table {
+    font-size: 14px;
+  }
+  
+  .doctors-table th, .doctors-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+  
+  .actions-button {
+    gap: 6px;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .doctors-table {
+    font-size: 12px;
+  }
+  
+  .doctors-table th, .doctors-table td {
+    font-size: 10px;
+    padding: 6px;
+  }
+  
+  .actions-button {
+    gap: 4px;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 6px 12px;
+    font-size: 10px;
+    width: calc(50% - 4px);
+  }
+}

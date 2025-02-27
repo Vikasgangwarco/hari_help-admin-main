@@ -1,0 +1,32 @@
+/* Unique styles for the button */
+.add-patient-mitra-button {
+  background-color: #1b5a90; /* Green background */
+  color: white; /* White text color */
+  font-size: 16px; /* Font size */
+  padding: 12px 24px; /* Padding around the text */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+/* Hover effect */
+.add-patient-mitra-button:hover {
+  background-color: #174d75; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Focus state */
+.add-patient-mitra-button:focus {
+  outline: none; /* Remove default outline */
+
+}
+
+/* Active state */
+.add-patient-mitra-button:active {
+  background-color: #174d75; /* Even darker green when clicked */
+  transform: translateY(2px); /* Button sinks down on click */
+}

@@ -1,0 +1,162 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff; /* White background for Navbar */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 60px;
+
+}
+
+/* Menu Icon - Circle and Color Change */
+.navbar .menu-icon {
+  background-color: #4F83D2; /* Softer Darker Blue for menu icon */
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+/* Hover effect for menu icon */
+.navbar .menu-icon:hover {
+  background-color: #34D399; /* Light Green background color on hover */
+  transform: scale(1.1); /* Scale up the icon a little */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Logo */
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1b5a90; /* Dark blue for the logo text */
+  flex-shrink: 0;
+  margin-right: 15px;
+  margin-left: 0px;
+}
+
+/* If you are using an image for the logo */
+.navbar .logo-image {
+  width: 100px; /* Adjust size of the logo image */
+  height: auto;
+}
+
+/* Search Bar */
+.navbar .search {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Adds space between logo and search bar */
+  flex-grow: 1;
+  position: relative;
+  margin-left: 60px;
+}
+
+.navbar .search input {
+  width: 300px; /* Fixed width for the search bar */
+  padding: 8px 10px 8px 30px; /* Add space on left for the icon */
+  border-radius: 20px;
+  border: 1px solid #D1D5DB; /* Lighter grey border */
+  font-size: 14px;
+  outline: none;
+  transition: width 0.3s ease-in-out;
+
+}
+
+.navbar .search input:focus {
+  width: 350px; /* Expands when focused */
+  border-color: #34D399; /* Green border when focused */
+}
+
+.navbar .search-icon {
+  position: absolute;
+  left: 10px; /* Places the icon inside the input field */
+  color: #A3B3C2; /* Lighter grey for icon */
+  font-size: 18px;
+}
+
+/* User Profile & Notifications */
+.navbar .user {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icons */
+  margin-right: 10px; /* Shifted slightly left */
+}
+
+.navbar .icon {
+  font-size: 22px;
+  cursor: pointer;
+  color: #1b5a90; /* Dark blue for icons */
+}
+
+.navbar .user-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Responsive Design (Mobile) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar .logo {
+    font-size: 20px;
+  }
+
+  .navbar .search input {
+    font-size: 12px;
+    padding: 6px 8px;
+    width: 180px; /* Smaller width on mobile */
+  }
+
+  .navbar .user .icon {
+    font-size: 20px;
+  }
+
+  .navbar .user-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar .search {
+    flex-grow: 1; /* On smaller screens, search bar will take up available space */
+  }
+}
+
+/* For extra-small screens, e.g., mobile devices */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+  }
+
+  .navbar .logo {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .navbar .search {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .navbar .user {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}

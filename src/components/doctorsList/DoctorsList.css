@@ -1,0 +1,54 @@
+.doctorsList {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* margin: 20px 0; */
+
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 0; /* Reduced or removed top margin for the heading */
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    /* Table header color changed to #1b5a90 */
+    th {
+      background-color: #1b5a90; /* Set to desired blue color */
+      color: white; /* Ensures text is visible against the blue background */
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Flexbox for the doctor image and name */
+    td.doctor-info {
+      display: flex;
+      align-items: center;  /* Vertically centers the items (image and name) */
+      justify-content: flex-start; /* Aligns both to the left */
+    }
+
+    .doctorImage {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px; /* Space between image and name */
+    }
+
+    .doctorName {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.chart-container {
+    display: flex; /* Flexbox to place items side by side */
+    justify-content: space-between; /* Add space between the charts */
+    gap: 20px; /* Optional: Add gap between charts */
+    padding: 20px;
+  }
+  
+  .chart-box {
+    width: 48%; /* Set each chart container to 48% of the screen width */
+    padding: 10px;
+    background-color: #fff; /* Optional: Add background color */
+    border-radius: 10px; /* Optional: Round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a modern look */
+  }
+  
+  h3 {
+    text-align: center; /* Center the titles */
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

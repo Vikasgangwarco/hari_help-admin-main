@@ -1,0 +1,161 @@
+.pharmacy-container {
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    border-radius: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .pharmacy-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .pharmacy-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .pharmacy-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pharmacy-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .pharmacy-name {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  
+  .pharmacy-address,
+  .pharmacy-contact,
+  .pharmacy-timings {
+    margin: 12px 0;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .pharmacy-address {
+    font-style: italic;
+  }
+  
+  .pharmacy-contact {
+    font-weight: 600;
+    color: #007BFF;
+  }
+  
+  .pharmacy-timings {
+    font-weight: 500;
+    color: #6c757d;
+  }
+  
+  .pharmacy-medicine-list {
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 1rem;
+    list-style-type: none;
+  }
+  
+  .pharmacy-medicine-item {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  .pharmacy-medicine-item::before {
+    content: '•';
+    margin-right: 10px;
+    color: #007BFF;
+  }
+  
+  .pharmacy-license-number {
+    margin-top: 25px;
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pharmacy-license-number span {
+    color: #007BFF;
+  }
+  
+  .pharmacy-contact {
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .pharmacy-title {
+      font-size: 2rem;
+    }
+  
+    .pharmacy-name {
+      font-size: 1.4rem;
+    }
+  
+    .pharmacy-address,
+    .pharmacy-contact,
+    .pharmacy-timings {
+      font-size: 0.9rem;
+    }
+  
+    .pharmacy-medicine-item {
+      font-size: 0.95rem;
+    }
+  
+    .pharmacy-license-number {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pharmacy-container {
+      padding: 15px;
+    }
+  
+    .pharmacy-title {
+      font-size: 1.5rem;
+    }
+  
+    .pharmacy-card {
+      padding: 15px;
+    }
+  
+    .pharmacy-name {
+      font-size: 1.2rem;
+    }
+  
+    .pharmacy-address,
+    .pharmacy-contact,
+    .pharmacy-timings {
+      font-size: 0.8rem;
+    }
+  
+    .pharmacy-medicine-item {
+      font-size: 0.8rem;
+    }
+  
+    .pharmacy-license-number {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,44 @@
+/* CSS File: AppointmentPatientTable.css */
+
+.unique-appointment-table-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.unique-table-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.unique-appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.unique-appointment-table th, .unique-appointment-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.unique-appointment-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.unique-get-appointment-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.unique-get-appointment-button:hover {
+  background-color: #0056b3;
+}

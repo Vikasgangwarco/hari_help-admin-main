@@ -1,0 +1,156 @@
+/* Sidebar Specific Styling */
+
+/* Logo Styling */
+.sidebar .top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar .logo {
+  width: 100px;
+  height: auto;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed .logo {
+  width: 50px; /* Smaller logo when sidebar is collapsed */
+}
+
+/* Line Divider */
+.sidebar .line {
+  height: 2px;
+  background-color: #ddd;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* Sidebar Menu */
+.center {
+  padding-left: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* Sidebar Menu List */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px; /* Rounded corners for each list item */
+}
+
+/* Icon Styling */
+.icon {
+  font-size: 24px;
+  color: white;
+}
+
+/* Text Styling */
+.text {
+  margin-left: 15px;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.text.hidden {
+  display: none;
+}
+
+/* Titles for sections */
+.title {
+  color: '#fff';
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Hamburger Menu for small screens */
+.hamburger-menu {
+  display: none; /* Hide by default */
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999; /* Make sure it's on top of other content */
+}
+
+.hamburger-menu div {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* On smaller screens, make sidebar collapsed */
+@media (max-width: 1024px) {
+  /* Collapse sidebar by default for screens smaller than 1024px (tablets & smaller) */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Sidebar off-screen by default */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.collapsed {
+    left: 0; /* Show sidebar when it's expanded */
+  }
+
+  .sidebar .center {
+    padding-left: 10px;
+  }
+
+  /* Show the hamburger menu on mobile/tablet */
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Hide sidebar text when collapsed */
+  .sidebar.collapsed .text {
+    display: none;
+  }
+
+  .sidebar.collapsed .icon {
+    font-size: 28px; /* Adjust icon size when collapsed */
+  }
+
+  /* Prevent content from overlapping with the sidebar */
+  body {
+    overflow-x: hidden; /* Avoid horizontal scroll */
+  }
+
+  /* Allow content to shift when sidebar expands */
+  .content {
+    transition: margin-left 0.3s ease;
+  }
+
+  .sidebar.collapsed + .content {
+    margin-left: 250px; /* Adjust content position when sidebar expands */
+  }
+}
+
+/* For mobile screens, you can adjust further if needed */
+@media (max-width: 768px) {
+  .sidebar .logo {
+    width: 60px;
+  }
+
+  .sidebar.collapsed .logo {
+    width: 40px;
+  }
+
+  .sidebar .icon {
+    font-size: 20px;
+  }
+}

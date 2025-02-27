@@ -1,0 +1,150 @@
+/* Container for the doctor list */
+.doctor-list {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #f4f6f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    overflow-x: auto;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Table header */
+  table th {
+    background-color: #1b5a90; /* Changed header background color */
+    color: #fff;
+    padding: 16px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  
+  /* Table rows */
+  table td {
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 15px;
+    color: #444;
+    border-bottom: 1px solid #e4e7eb;
+    border-right: 1px solid #e4e7eb;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f1f7fd;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 8px 18px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  button:hover {
+    background-color: #4cae4c;
+    transform: translateY(-3px);
+  }
+  
+  /* More info section for each doctor */
+  .more-info {
+    display: none;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    border: 1px solid #e4e7eb;
+  }
+  
+  .more-info p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  /* More button inside table */
+  td button.more-btn {
+    padding: 8px 18px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+  
+  td button.more-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .doctor-list {
+      padding: 20px;
+    }
+  
+    table {
+      border: 0;
+    }
+  
+    table th, table td {
+      font-size: 13px;
+      padding: 12px;
+    }
+  
+    table td {
+      display: block;
+      padding-left: 40%;
+      position: relative;
+    }
+  
+    table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      font-size: 13px;
+      color: #777;
+    }
+  
+    td button.more-btn {
+      padding: 6px 14px;
+      font-size: 12px;
+    }
+  
+    /* More info section */
+    .more-info {
+      padding: 15px;
+      margin-top: 10px;
+      font-size: 12px;
+    }
+  }
+  

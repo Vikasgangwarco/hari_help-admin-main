@@ -1,0 +1,62 @@
+/* ClinicsTable.css */
+
+.clinics-table {
+  width: 97%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: 21px;
+}
+
+.clinics-table th,
+.clinics-table td {
+  padding: 15px 20px;
+  /* border: 1px solid #e0e4e8; */
+}
+
+.clinics-table th {
+  background-color: #1b5a90;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.clinics-table tbody tr {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.clinics-table tbody tr:nth-child(even) {
+  background-color: #f5f8fa;
+}
+
+.clinics-table tbody tr:hover {
+  background-color: #dff0fc;
+  transform: translateY(-2px);
+}
+
+.clinics-table .no-data {
+  text-align: center;
+  font-style: italic;
+  color: #a0a6ab;
+  background-color: #fafbfc;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.clinics-table th:first-child, 
+.clinics-table td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.clinics-table th:last-child, 
+.clinics-table td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

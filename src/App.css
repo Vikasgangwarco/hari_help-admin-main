@@ -1,0 +1,96 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 240px; /* Default sidebar width */
+  background-color: #1b5a90;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  transition: width 0.3s ease; /* Smooth transition for sidebar */
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+/* Collapsed Sidebar */
+.sidebar.collapsed {
+  width: 80px; /* Collapsed width */
+}
+
+/* Layout Container */
+.layout {
+  display: flex;
+  margin-left: 220px; /* Reduced margin to bring content closer to sidebar */
+  margin-top: 10px; /* Add top margin to push content below the navbar */
+  transition: margin-left 0.3s ease, margin-top 0.3s ease;
+  height: calc(100vh - 60px); /* Adjust height to account for navbar */
+}
+
+.layout.collapsed {
+  margin-left: 80px; /* Adjusted margin when sidebar is collapsed */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease, margin-top 0.3s ease;
+  height: calc(100vh - 60px); /* Adjust height to account for navbar */
+  overflow-y: auto;
+}
+
+/* Active Link Styling */
+li.active {
+  background-color: #00d0f1;
+  color: white;
+  border-radius: 5px;
+}
+
+li.active .icon {
+  color: white;
+}
+
+/* Hover Effects */
+li:hover {
+  background-color: #19c1dc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+li:hover .icon {
+  color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .sidebar.collapsed {
+    width: 0;
+  }
+
+  .layout {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 60px; /* Add top margin for mobile as well */
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}

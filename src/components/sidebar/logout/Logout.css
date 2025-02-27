@@ -1,0 +1,17 @@
+/* Logout.css */
+li {
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background-color: #f44336;
+  }
+  
+  .icon {
+    color: white;
+  }
+  
+  .text {
+    color: white;
+  }
+  

@@ -1,0 +1,75 @@
+.blood-bank-table-bbt {
+  width: 98%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px; /* Rounded corners for the whole table */
+  overflow: hidden; /* Prevents border-radius from affecting the inner elements */
+  margin-left: 20px;
+}
+
+.blood-bank-table-bbt th,
+.blood-bank-table-bbt td {
+  padding: 12px;
+  /* border: 1px solid #ddd; */
+  text-align: left;
+}
+
+.blood-bank-table-bbt th {
+  background-color: #1b5a90;
+  color: white;
+  font-size: 16px;
+  font-weight: 600; /* Slightly bolder text for headers */
+  text-transform: uppercase; /* Uppercase for header text */
+}
+
+.blood-bank-table-bbt td {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.blood-bank-table-bbt tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.blood-bank-table-bbt tr:hover {
+  background-color: #f1f1f1; 
+}
+
+.blood-bank-table-bbt .no-data {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+  font-size: 14px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Soft background for no data message */
+}
+
+.blood-bank-table-bbt td button,
+.blood-bank-table-bbt td a {
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 30px; /* More rounded button edges */
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.blood-bank-table-bbt td button:hover,
+.blood-bank-table-bbt td a:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+.blood-bank-table-bbt td button:focus,
+.blood-bank-table-bbt td a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Focus outline for accessibility */
+}
+
+.blood-bank-table-bbt th,
+.blood-bank-table-bbt td {
+  transition: background-color 0.3s ease;
+}

@@ -1,0 +1,123 @@
+/* Enhanced CSS for Blood Bank Form */
+.blood-bank-form {
+    width: 100%;
+    max-width: 950px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blood-bank-form h2, .blood-bank-form h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.blood-bank-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.blood-bank-form input[type="text"],
+.blood-bank-form input[type="date"],
+.blood-bank-form input[type="email"],
+.blood-bank-form input[type="tel"],
+.blood-bank-form input[type="url"],
+.blood-bank-form input[type="file"],
+.blood-bank-form select,
+.blood-bank-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.blood-bank-form input:focus, 
+.blood-bank-form select:focus, 
+.blood-bank-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.blood-bank-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.blood-bank-form .checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #555;
+}
+
+.blood-bank-form .terms-and-conditions label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blood-bank-form .form-buttons {
+    /* display: flex; */
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.blood-bank-form button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.blood-bank-form button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.blood-bank-form button[type="reset"] {
+    background-color: #ff4757;
+    color: #fff;
+    margin-left: 40px;
+}
+
+.blood-bank-form button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.blood-bank-form button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Add responsive styling */
+@media (max-width: 768px) {
+    .blood-bank-form {
+        padding: 20px;
+    }
+
+    .blood-bank-form button {
+        flex: 1;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .blood-bank-form h2, .blood-bank-form h3 {
+        font-size: 1.5em;
+    }
+}

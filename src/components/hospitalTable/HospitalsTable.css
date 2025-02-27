@@ -1,0 +1,111 @@
+/* Table Container */
+.hospitals-table {
+    width: 95%;  /* Adjusted width for space on both sides */
+    margin: 20px auto; /* Auto margin for centering the table with space on both sides */
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Table Headers */
+.hospitals-table th {
+    text-align: left;
+    padding: 16px;
+    background-color: #1b5a90;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* Table Rows */
+.hospitals-table td {
+    text-align: left;
+    padding: 16px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555555;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hospitals-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.hospitals-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.hospitals-table tr:hover {
+    background-color: #e3f2fd;
+    color: #333;
+    cursor: pointer;
+}
+
+/* No Data Message */
+.hospitals-table .no-data {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #777777;
+    font-style: italic;
+}
+
+/* Rounded Corners for First and Last Cells */
+.hospitals-table td:first-child,
+.hospitals-table th:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.hospitals-table td:last-child,
+.hospitals-table th:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Actions Button Styles */
+.actions-button {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edit-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

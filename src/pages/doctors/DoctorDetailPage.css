@@ -1,0 +1,52 @@
+/* DoctorDetailPage.css */
+.doctor-detail-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.action-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    width: 120px;
+    text-align: center;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+}
+
+/* Optional: Add a shadow effect to buttons for a bit more styling */
+.edit-btn, .delete-btn {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-registration-form {
+    /* Additional styles for the form */
+    margin-top: 20px;
+}

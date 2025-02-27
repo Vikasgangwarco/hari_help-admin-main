@@ -1,0 +1,37 @@
+/* General Page Styles */
+.hospital-page {
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Stylish Add Hospital Button */
+.add-hospital-button {
+  display: inline-block;
+  margin: 20px 0 20px 20px; /* Increased left margin */
+  padding: 12px 28px; /* Slightly wider padding for a balanced look */
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #1b5a90; /* New color: Green */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transitions for hover effects */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+  margin-top: 50px;
+}
+
+/* Hover Effects */
+.add-hospital-button:hover {
+  background-color: #0d4579; /* Darker green for hover */
+  transform: translateY(-2px); /* Button lifts slightly on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+/* Active Button Effect */
+.add-hospital-button:active {
+  background-color: #0d4579; /* Even darker green when active */
+  transform: translateY(0); /* Reset lift effect */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow when pressed */
+}

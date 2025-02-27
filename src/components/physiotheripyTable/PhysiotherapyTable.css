@@ -1,0 +1,97 @@
+/* PhysiotherapyTable.css */
+
+/* Container for the table */
+.physiotherapy-table-container {
+    margin: 30px auto;
+    /* padding: 20px; */
+    background-color: #f9f9f9; /* Light background for the container */
+    border-radius: 10px;
+    max-width: 1100px; /* Limiting max width for larger screens */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for the container */
+  .physiotherapy-table-container:hover {
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+  }
+  
+  /* Heading Style */
+  .physiotherapy-table-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+  }
+  
+  /* Table Styling */
+  .physiotherapy-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-top: 20px; */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Header Style */
+  .physiotherapy-table th {
+    background-color: #1b5a90; /* Updated header color */
+    color: #fff;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Table Data Cell Style */
+  .physiotherapy-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Table Row Hover Effect */
+  .physiotherapy-table tr:hover {
+    background-color: #f3f3f3;
+    transition: all 0.3s ease;
+  }
+  
+  /* Even Row Background */
+  .physiotherapy-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Empty State for No Data */
+  .physiotherapy-table td[colspan=""] {
+    text-align: center;
+    font-style: italic;
+    color: #bbb;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  /* Add small responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .physiotherapy-table th,
+    .physiotherapy-table td {
+      padding: 10px 12px;
+      font-size: 13px;
+    }
+  
+    .physiotherapy-table-container {
+      padding: 10px;
+    }
+  
+    .physiotherapy-table th {
+      font-size: 14px;
+    }
+  }
+  

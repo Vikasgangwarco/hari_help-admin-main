@@ -1,0 +1,1 @@
+export const selectOnboardingReducer = state => state.OnboardingReducer;
